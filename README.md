@@ -13,3 +13,55 @@
     <a href="https://thienhang.com">Request Feature</a>
   </p>
 </div>
+
+
+Update your package index:
+
+
+```
+sudo apt update
+sudo apt install python3 python3-pip
+
+python3 --version
+
+nano ~/.bashrc
+
+
+```
+Add the following line to the end of the file:
+
+```
+alias python='python3'
+
+```
+
+Save and close the file.
+
+To apply the changes immediately, source your .bashrc file:
+
+```
+
+source ~/.bashrc
+
+```
+
+``` shell
+pip install poetry
+
+poetry env list
+
+poetry env use python3
+
+poetry install
+
+poetry add requests
+
+poetry run python services/http/__init__.py
+
+poetry export --output requirements.txt
+
+poetry shell
+
+poetry show
+
+```
