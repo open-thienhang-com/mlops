@@ -3,7 +3,7 @@ import sys
 print("helloworld")
 print(os.path.join(os.path.dirname(__file__)))
 
-from pmodules.crawler import WebCrawler
+from packages.crawler import WebCrawler
 
 class Service:
     def __init__(self):

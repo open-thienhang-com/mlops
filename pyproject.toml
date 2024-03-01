@@ -5,7 +5,7 @@ description = ""
 authors = ["thienhang.com"]
 readme = "README.md"
 packages = [
-    { include = "pmodules" },
+    { include = "libs" },
     { include = "services" },
 ]
 
@@ -14,6 +14,7 @@ python = "^3.10"
 hdfs = "^2.7.2"
 modules = "^1.0.0"
 requests = "^2.31.0"
+common = { path = "packages/glog/", develop = true }
 
 
 [tool.poetry.group.dev.dependencies]
