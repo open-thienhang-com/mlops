@@ -46,7 +46,8 @@ while true; do
         echo "$main_file"
         if [ -f "$main_file" ]; then
             echo "Executing main.py in $selected_subdir_name"
-            echo poetry run python "$main_file"
+            echo poetry run python "$selected_subdir"
+            poetry install "$main_file"
             poetry run python "$main_file"
         else
             echo "main.py not found in $selected_subdir_name"
