@@ -7,7 +7,7 @@ from flask import request
 from http import HTTPStatus
 
 
-class TestResource(Resource):
+class Resource(Resource):
     def __init__(self) -> None:
         super().__init__()
 

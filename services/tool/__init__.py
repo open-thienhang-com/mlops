@@ -1,11 +1,16 @@
-from packages.adapters.http import TestHttpService
-# from .apis import api_v1
-from .views import views
+ 
+from flask import Flask
+ 
+app = Flask(__name__)
+ 
+@app.route('/')
+@app.route('/hello')
+def hello():
+   # Render the page
+   return "Hello Python!"
 
 class BaseService:
     def __init__(self):
-        service = TestHttpService()
-        # service.add_api(api_v1.get_api())
-        service.add_ui(views.get_api())
-        # service.add_api(api_v2.get_api())
-        service.run()
+        app.run('localhost', 8080)
+ 
+ 

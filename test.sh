@@ -41,6 +41,7 @@ while true; do
         # Extract the base name of the selected subdirectory
         selected_subdir_name=$(basename "$selected_subdir")
         echo "Selected directory: $selected_subdir_name"
+        #
 
         main_file="$selected_subdir/__init__.py"
         echo "$main_file"
