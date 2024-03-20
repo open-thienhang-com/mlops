@@ -7,7 +7,8 @@ script_path = os.path.abspath(__file__)
 print("Script Location:", script_path)
 
 
-from services.tool import BaseService
+
+from services.crawler import BaseService
 
 if __name__ == "__main__":
     BaseService()

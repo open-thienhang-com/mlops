@@ -13,6 +13,7 @@ modules = "^1.0.0"
 requests = "^2.31.0"
 # glog = { path = "packages/glog/", develop = true }
 flask-restx = "^1.3.0"
+gspread = "^6.0.2"
 
 
 
